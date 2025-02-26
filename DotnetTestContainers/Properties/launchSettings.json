@@ -2,7 +2,7 @@
   "profiles": {
     "DotnetTestContainers": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7093",
+      "commandLineArgs": "--verbose",
       "launchBrowser": false
     }
   }
