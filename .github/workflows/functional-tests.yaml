@@ -1,0 +1,22 @@
+name: "Run Functional Tests"
+on:
+  workflow_dispatch:
+jobs:
+  main-functional-tests-job:
+    name: "Execute Functional Tests"
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: "Clone Repository"
+        uses: actions/checkout@v4
+      - name: "Install Dotnet"
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+      - name: "Build & Restore"
+        run: |
+          dotnet restore
+          dotnet build --configuration Release
+      - name: "Run Functional Tests"
+        run: |
+          dotnet test
