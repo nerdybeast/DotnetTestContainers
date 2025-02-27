@@ -9,7 +9,7 @@ public class Function1(ILogger<Function1> logger)
     private readonly ILogger<Function1> _logger = logger;
 
     [Function(nameof(Function1))]
-    public void Run([QueueTrigger("sample-queue-items")] QueueMessage message)
+    public void Run([QueueTrigger("samplequeueitems")] QueueMessage message)
     {
         _logger.LogInformation("C# Queue trigger function processed: {MessageText}", message.MessageText);
     }

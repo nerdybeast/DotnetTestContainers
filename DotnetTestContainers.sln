@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DA1107D9-F8C3-4759-BA1D-28A998E68B58}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		Dockerfile = Dockerfile
 		.github\workflows\functional-tests.yaml = .github\workflows\functional-tests.yaml
 	EndProjectSection
 EndProject
